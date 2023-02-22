@@ -1,35 +1,21 @@
-import Todoform from "@/components/1_molecules/todoform";
+import TodoForm from "@/components/1_molecules/todoform";
+import TodoList from "@/components/1_molecules/todoList";
+import { useStore } from "@/components/store/useStore";
 import { link } from "fs";
 import React, { useState } from "react";
 
 export default function Home() {
-  const [todos, setTodos] = useState<any>([
-    {
-      name: "Todo 1",
-      isCompleted: false,
-    },
-    {
-      name: "Todo 1",
-      isCompleted: false,
-    },
-    {
-      name: "Todo 1",
-      isCompleted: false,
-    },
-  ]);
 
- 
   return (
-    <div className="px-10">
-      <h1>Today</h1>
+    <div className="flex items-stretch">
+      <div className="mx-auto py-4 px-10 self-center">
+        <h1 className="font-extrabold text-4xl mb-6">Todo</h1>
 
-      <Todoform setTodos={setTodos}/>
+        <TodoForm />
 
-      <ol className="list-decimal">
-        {todos.map((todo: any, index: number) => (
-          <li key={index}>{todo.name}</li>
-        ))}
-      </ol>
+        <TodoList />
+      </div>
     </div>
   );
 }
+
