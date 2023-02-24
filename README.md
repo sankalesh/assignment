@@ -1,4 +1,4 @@
-Project Name
+Accordion
 This project is a [brief description of what the project does]. It uses Next.js, TypeScript, code splitting, good naming conventions, the atomic structure model, and the Zustand package. Additionally, the project implements server-side rendering and includes types and interfaces throughout the code.
 
 Getting Started
