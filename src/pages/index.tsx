@@ -1,8 +1,6 @@
 import TodoForm from "@/components/1_molecules/todoform";
 import TodoList from "@/components/1_molecules/todoList";
-import { useStore } from "@/components/store/useStore";
-import { link } from "fs";
-import React, { useState } from "react";
+import React from "react";
 
 export default function Home() {
 

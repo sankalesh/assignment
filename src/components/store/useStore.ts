@@ -4,15 +4,15 @@ import { create } from 'zustand'
 
 const INITIAL_TODO = [
     {
-        name: "Todo 1",
+        name: "fish",
         isCompleted: false,
     },
     {
-        name: "Todo 1",
+        name: "mutton",
         isCompleted: false,
     },
     {
-        name: "Todo 1",
+        name: "chicken",
         isCompleted: false,
     },
 ]
